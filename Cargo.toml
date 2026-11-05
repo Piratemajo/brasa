@@ -31,7 +31,7 @@ md5 = "0.7"
 sha2 = "0.10"
 rpassword = "7"
 uuid = { version = "1", features = ["v4"] }
-zip = { version = "2.2", default-features = false, features = ["deflate"] }
+zip = { version = "9.2", default-features = false, features = ["deflate"] }
 flate2 = "1"
 tar = "0.4"
 clap = { version = "4", features = ["derive"] }
