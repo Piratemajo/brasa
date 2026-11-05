@@ -113,7 +113,7 @@ jobs:
         if: runner.os == 'Windows'
         shell: pwsh
         run: Copy-Item target\release\brasa.exe Brasa-Setup-windows-x64.exe
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.artifact }}
           path: |
@@ -161,7 +161,7 @@ jobs:
           jar=$(ls mods/cosmetics/${{ matrix.family }}/build/libs/*.jar | grep -v -- '-sources' | head -1)
           cp "$jar" brasa-cosmetics-${{ matrix.family }}.jar
           sha256sum brasa-cosmetics-${{ matrix.family }}.jar > brasa-cosmetics-${{ matrix.family }}.jar.sha256
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: brasa-cosmetics-${{ matrix.family }}
           path: brasa-cosmetics-${{ matrix.family }}.jar*
