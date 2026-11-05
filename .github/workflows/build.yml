@@ -16,11 +16,10 @@ jobs:
   build:
     strategy:
       fail-fast: false
-      # Windows y sobre todo macOS gastan muchos más minutos (macOS ~10 veces Linux): en cada push o PR
-      # sólo Linux (pruebas y clippy). Las tres plataformas al publicar una versión (etiqueta v*) o al
-      # lanzarlo a mano desde Actions → build → Run workflow.
+      # Las tres plataformas en cada push a main, en las etiquetas v* y al lanzarlo a mano. En los
+      # pull requests sólo Linux (pruebas y clippy), que es lo más rápido.
       matrix:
-        include: ${{ fromJSON((startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch') && '[{"os":"ubuntu-latest","bin":"brasa","artifact":"brasa-linux-x64"},{"os":"windows-latest","bin":"brasa.exe","artifact":"brasa-windows-x64.exe"},{"os":"macos-latest","bin":"brasa","artifact":"brasa-macos-arm64"}]' || '[{"os":"ubuntu-latest","bin":"brasa","artifact":"brasa-linux-x64"}]') }}
+        include: ${{ fromJSON((github.event_name != 'pull_request') && '[{"os":"ubuntu-latest","bin":"brasa","artifact":"brasa-linux-x64"},{"os":"windows-latest","bin":"brasa.exe","artifact":"brasa-windows-x64.exe"},{"os":"macos-latest","bin":"brasa","artifact":"brasa-macos-arm64"}]' || '[{"os":"ubuntu-latest","bin":"brasa","artifact":"brasa-linux-x64"}]') }}
     runs-on: ${{ matrix.os }}
     env:
       # Datos de distribución: quedan incrustados en el binario y el usuario no los ve (src/distro.rs).
