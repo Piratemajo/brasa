@@ -11,7 +11,7 @@ that depends on it is hidden and everything else keeps working.
 | Microsoft sign-in | `BRASA_MSA_CLIENT_ID` | variable or secret | Only offline and Yggdrasil accounts |
 | CurseForge | `BRASA_CURSEFORGE_KEY` | **secret** | Browse shows Modrinth only |
 | Discord Rich Presence | `BRASA_DISCORD_CLIENT_ID` | variable or secret | No Discord option |
-| Update repository | `BRASA_UPDATE_REPO` | variable `BRASA_RELEASES_REPO` (optional; CI defaults to the repository being built) | The build does not update itself |
+| Update repository | `BRASA_UPDATE_REPO` | nothing: CI uses the repository being built (optionally, variable `BRASA_RELEASES_REPO`) | The build does not update itself |
 
 For local development you can set the same variables at runtime, and they take precedence:
 `BRASA_MSA_CLIENT_ID=… brasa`. Embedded values are never written to `settings.toml`.
@@ -77,11 +77,12 @@ CI signs `brasa.exe`:
 |---|---|
 | Windows | `WINDOWS_CERTIFICATE` (base64-encoded `.pfx`), `WINDOWS_CERTIFICATE_PASSWORD` |
 
-## Publishing releases to a separate repository
+## Publishing releases to a separate repository (optional)
 
-Players download updates and the cosmetics mod from GitHub Releases without signing in, so releases
-must live in a public repository. If you keep the code repository private, publish releases to a
-second, public one:
+By default, releases are published in this same repository with the built-in `GITHUB_TOKEN`, so
+there is nothing to configure. Players download updates and the cosmetics mod without signing in,
+so releases must live in a public repository. Only if you fork Brasa and keep your code private do
+you need a second, public repository:
 
 1. **Create the public repository.** For example `user/brasa-releases`, initialised with a README.
 2. **Create a fine-grained personal access token.**

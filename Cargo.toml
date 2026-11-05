@@ -6,7 +6,6 @@ rust-version = "1.91"
 description = "A fast, native Minecraft: Java Edition launcher with isolated instances and built-in mod support"
 license = "MIT"
 repository = "https://github.com/Piratemajo/brasa"
-homepage = "https://github.com/Piratemajo/brasa-releases"
 readme = "README.md"
 keywords = ["minecraft", "launcher", "modrinth", "fabric", "egui"]
 categories = ["games", "command-line-utilities"]

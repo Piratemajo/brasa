@@ -132,7 +132,7 @@ pub async fn check(client: &reqwest::Client, repo: &str) -> Result<Option<Releas
 /// GitHub responde 404 tanto si no hay releases como si el repo es privado (sin sesión no lo ve).
 pub fn not_found(repo: &str) -> String {
     format!(
-        "{repo} no tiene releases públicas. Si el repo es privado, los jugadores no pueden verlas: publica las releases en un repo público aparte (variable BRASA_RELEASES_REPO del CI, ver «Distribuir Brasa» en el README)"
+        "{repo} no tiene releases públicas. Si el repo es privado, los jugadores no pueden verlas: publica las releases en un repo público aparte (variable BRASA_RELEASES_REPO del CI, ver docs/RELEASING.md)"
     )
 }
 

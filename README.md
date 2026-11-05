@@ -8,7 +8,7 @@ A fast, native launcher for **Minecraft: Java Edition**, written in Rust.
 
 [![CI](https://github.com/Piratemajo/brasa/actions/workflows/build.yml/badge.svg)](https://github.com/Piratemajo/brasa/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/Piratemajo/brasa-releases?include_prereleases&label=release)](https://github.com/Piratemajo/brasa-releases/releases)
+[![Release](https://img.shields.io/github/v/release/Piratemajo/brasa?include_prereleases&label=release)](https://github.com/Piratemajo/brasa/releases)
 
 <img src="docs/screenshots/home.png" width="720" alt="Brasa home screen">
 
@@ -81,7 +81,7 @@ available in English and Spanish.
 ## Install
 
 Download the latest build for your platform from the
-[releases page](https://github.com/Piratemajo/brasa-releases/releases):
+[releases page](https://github.com/Piratemajo/brasa/releases):
 
 | Platform | File |
 |---|---|
