@@ -1,0 +1,1075 @@
+# Traducción al inglés de la interfaz de Brasa.
+# Formato: texto en español (tal cual está en el código, con sus \n y {marcadores}) <TAB> inglés.
+# Los marcadores {…} tienen que ser los mismos en las dos columnas. Líneas con # son comentarios.
+# Para encontrar textos nuevos sin traducir: python3 scripts/i18n_scan.py
+Buscando versiones del loader	Looking up loader versions
+No se pudo añadir el servidor: {e:#}	Couldn't add the server: {e:#}
+Texturas	Resource packs
+Shaders	Shaders
+Imágenes	Images
+Añadir capturas	Add screenshots
+{n} añadidos a {}	{n} added to {}
+Icono de la instancia	Instance icon
+Imagen	Image
+Actualizando modpack	Updating modpack
+Modpack actualizado a {v}. Tus mundos se copiaron antes.	Modpack updated to {v}. Your worlds were backed up first.
+Reparando	Repairing
+Instalando	Installing
+Instancia guardada	Instance saved
+Copia de seguridad	Backup
+Copiando «{world}»	Backing up “{world}”
+[brasa] Copia guardada: {} ({})	[brasa] Backup saved: {} ({})
+Restaurando copia	Restoring backup
+[brasa] Mundo «{name}» restaurado (el anterior se conservó aparte en saves/)	[brasa] World “{name}” restored (the previous one was kept aside in saves/)
+Buscando actualizaciones	Checking for updates
+{} actualizaciones disponibles	{} updates available
+Actualizando mods	Updating mods
+{n} mods actualizados	{n} mods updated
+Buscando en CurseForge	Searching CurseForge
+Buscando en Modrinth	Searching Modrinth
+Instalando modpack	Installing modpack
+Modpack instalado como '{}'	Modpack installed as '{}'
+elige una instancia de destino	choose a target instance
+Instalando desde Modrinth	Installing from Modrinth
+Instalado: {}	Installed: {}
+selecciona una instancia para soltar mods	select an instance to drop mods into
+Añadido {}	Added {}
+Iniciando sesión con Microsoft	Signing in with Microsoft
+Introduce el código {} en {}	Enter the code {} at {}
+Sesión iniciada como {}	Signed in as {}
+rellena servidor, usuario y contraseña	fill in server, username and password
+Iniciando sesión	Signing in
+Sesión iniciada como {} ({})	Signed in as {} ({})
+Instalando modpack de CurseForge	Installing CurseForge modpack
+Instalando desde CurseForge	Installing from CurseForge
+ese juego no está abierto desde Brasa	that game wasn't started from Brasa
+Instalando perfil de rendimiento	Installing performance mods
+Rendimiento: instalados {}	Performance: installed {}
+ · no disponibles: {}	 · not available: {}
+Modpack de Modrinth	Modrinth modpack
+Exportando modpack	Exporting modpack
+Exportado {} ({refd} enlazados a Modrinth, {emb} dentro del pack)	Exported {} ({refd} linked to Modrinth, {emb} bundled in the pack)
+Mods	Mods
+Añadir mods	Add mods
+Modpacks	Modpacks
+No se encontraron instancias de Prism/MultiMC, CurseForge, ATLauncher ni del launcher oficial. Si están en otra carpeta, usa «Elegir carpeta».	No Prism/MultiMC, CurseForge, ATLauncher or official launcher instances were found. If they're somewhere else, use “Choose folder”.
+Importando instancia	Importing instance
+Importada '{}' desde {}	Imported '{}' from {}
+Carpeta de una instancia (Prism, MultiMC, CurseForge o ATLauncher)	Instance folder (Prism, MultiMC, CurseForge or ATLauncher)
+Probando…	Testing…
+Probando conexión	Testing connection
+Buscando actualizaciones de Brasa	Checking for Brasa updates
+Brasa {} está al día	Brasa {} is up to date
+Actualizando Brasa	Updating Brasa
+Actualizado a {}: cierra y vuelve a abrir Brasa	Updated to {}: close and reopen Brasa
+Cambiando de personaje	Switching character
+cuenta no encontrada	account not found
+Ahora juegas como {}	You're now playing as {}
+Skin PNG	Skin PNG
+Elegir skin (64×64)	Choose skin (64×64)
+Subiendo skin	Uploading skin
+no hay cuenta activa	no active account
+Skin subida a tu cuenta premium	Skin uploaded to your premium account
+Quitando skin	Removing skin
+Skin quitada	Skin removed
+Elegir skin local (64×64)	Choose local skin (64×64)
+Skin local guardada: se verá al lanzar el juego	Local skin saved: you'll see it when the game starts
+no se pudieron guardar los cosméticos: {e:#}	couldn't save cosmetics: {e:#}
+no se pudo abrir {name}: {e:#}	couldn't open {name}: {e:#}
+Error copiado al portapapeles	Error copied to the clipboard
+Buscando Java instalados	Looking for installed Java
+Elegir {name}	Choose {name}
+Ajustes guardados	Settings saved
+Preparando…	Preparing…
+Preparando juego	Preparing game
+Cargando versiones	Loading versions
+[brasa] Lista de versiones no disponible: {e:#}	[brasa] Version list unavailable: {e:#}
+Importando modpack	Importing modpack
+{} (copia)	{} (copy)
+Cuentas	Accounts
+Premium (Microsoft), no premium o no premium con skin.	Premium (Microsoft), non-premium, or non-premium with a skin.
+Todavía no hay cuentas. Añade una abajo para poder jugar.	No accounts yet. Add one below to play.
+Personaje: {}	Character: {}
+Eliminar	Remove
+✔ En uso	✔ In use
+Usar esta	Use this one
+Añadir cuenta	Add account
+⭐ Premium	⭐ Premium
+Cuenta de Microsoft con Minecraft comprado: skins oficiales, Realms y cualquier servidor.	Microsoft account that owns Minecraft: official skins, Realms and any server.
+Abre el enlace e introduce este código:	Open the link and enter this code:
+📋  Copiar código	📋  Copy code
+Esperando confirmación…	Waiting for confirmation…
+Iniciar sesión con Microsoft	Sign in with Microsoft
+Esta copia de Brasa no incluye el inicio de sesión con Microsoft. Mientras tanto puedes jugar con una cuenta no premium.	This copy of Brasa doesn't include Microsoft sign-in. Meanwhile you can play with a non-premium account.
+Si la cuenta no tiene el juego, se abre en modo demo.	If the account doesn't own the game, it opens in demo mode.
+No premium	Non-premium
+Rápida: sólo nombre	Quick: just a name
+Nombre (3-16)	Name (3-16)
+Añadir	Add
+Un jugador, LAN y servidores no premium (online-mode=false).	Singleplayer, LAN and non-premium servers (online-mode=false).
+Con skin: Ely.by / LittleSkin	With a skin: Ely.by / LittleSkin
+Otro servidor	Other server
+Usuario o email	Username or email
+Contraseña	Password
+Iniciar sesión	Sign in
+Cuenta gratis:	Free account:
+Ely.by	Ely.by
+LittleSkin	LittleSkin
+La contraseña no se guarda.	Your password isn't stored.
+👕 Skin de {}	👕 {}'s skin
+Subir skin (clásica)…	Upload skin (classic)…
+Subir skin (slim)…	Upload skin (slim)…
+Quitar skin	Remove skin
+Se cambia en tu cuenta oficial: la ve todo el mundo.	It changes on your official account: everyone sees it.
+Las cuentas en modo demo no pueden cambiar la skin.	Demo accounts can't change their skin.
+Cambiar skin en la web	Change skin on the website
+La skin se gestiona en la web de tu servidor y se ve en el juego automáticamente.	The skin is managed on your server's website and shows up in game automatically.
+Quitar	Remove
+Sin skin local.	No local skin.
+Elegir PNG…	Choose PNG…
+Skin local: sólo la ves tú. Para que la vean otros usa Ely.by o LittleSkin.	Local skin: only you see it. For others to see it, use Ely.by or LittleSkin.
+un momento…	one moment…
+Explorar	Browse
+Mods, resource packs, shaders y modpacks con dependencias automáticas.	Mods, resource packs, shaders and modpacks, with dependencies handled for you.
+Modrinth	Modrinth
+CurseForge	CurseForge
+🔎  Buscar en CurseForge…	🔎  Search CurseForge…
+🔎  Buscar en Modrinth…	🔎  Search Modrinth…
+Buscar	Search
+— elige instancia —	— choose instance —
+Instalar como instancia	Install as instance
+Instalar	Install
+Busca algo o pulsa Buscar para ver lo más popular	Search for something, or press Search to see what's popular
+Los resultados se filtran por la versión y el loader de la instancia elegida	Results are filtered by the chosen instance's version and loader
+Borrar	Delete
+Cancelar	Cancel
+📁  Abrir carpeta	📁  Open folder
+➕  Añadir	➕  Add
+🔍  Buscar más	🔍  Find more
+Abrir Explorar con esta instancia como destino	Open Browse with this instance as the target
+Sin texturas	No resource packs
+Las activas se aplican al abrir el juego; la última activada tiene prioridad.	Enabled packs apply when the game starts; the last one enabled takes priority.
+Se usan con {l}. Sólo puede haber uno activo.	They're used with {l}. Only one can be active.
+Para usar shaders, la instancia necesita Iris (Fabric, Quilt o NeoForge) u OptiFine.	To use shaders, the instance needs Iris (Fabric, Quilt or NeoForge) or OptiFine.
+Sin shaders	No shaders
+Desactivar	Disable
+Activo	Active
+Activar	Enable
+Sin capturas	No screenshots
+Pulsa F2 en el juego para hacer una	Press F2 in game to take one
+{}\nClic para abrir · clic derecho para más	{}\nClick to open · right-click for more
+Abrir	Open
+Borrar…	Delete…
+Se muestran las {MAX_SHOTS} más recientes de {}. «Abrir carpeta» para ver todas.	Showing the {MAX_SHOTS} most recent of {}. Use “Open folder” to see them all.
+Nueva instancia	New instance
+Cada instancia tiene sus propios mods, mundos y ajustes.	Each instance has its own mods, worlds and settings.
+No se pudo descargar la lista de versiones de Mojang	Couldn't download Mojang's version list
+Suele ser la red: proxy de empresa/instituto, firewall o antivirus, o IPv6 roto. Brasa ya reintenta por IPv4 y por el espejo BMCLAPI.	It's usually the network: a work/school proxy, a firewall or antivirus, or broken IPv6. Brasa already retries over IPv4 and through the BMCLAPI mirror.
+↻  Reintentar	↻  Retry
+🔎  Probar conexión	🔎  Test connection
+Cargando versiones…	Loading versions…
+Nombre	Name
+Automático (p. ej. Fabric 1.21.1)	Automatic (e.g. Fabric 1.21.1)
+Versión de Minecraft	Minecraft version
+Mostrar snapshots	Show snapshots
+Mod loader	Mod loader
+Versión del loader	Loader version
+Recomendada	Recommended
+↻  Cargar lista	↻  Load list
+Crear e instalar	Create and install
+¿Ya tienes un modpack o instancias en otro launcher?	Already have a modpack or instances in another launcher?
+📥  Desde Prism / launcher oficial	📥  From Prism / official launcher
+🔍  Buscar modpacks	🔍  Find modpacks
+También puedes arrastrar el fichero directamente a la ventana.	You can also drag the file straight onto the window.
+{:.1} MB	{:.1} MB
+{} KB	{} KB
+hace un momento	just now
+hace {} min	{} min ago
+hace {} h	{} h ago
+hace 1 día	1 day ago
+hace {days} días	{days} days ago
+{} jugadas · última {}	{} played · last {}
+Aún no has jugado a esta instancia	You haven't played this instance yet
+Crea tu primera instancia o tráete las de otro launcher.	Create your first instance or bring yours over from another launcher.
+{} jugadas en 1 instancia.	{} played across 1 instance.
+{} jugadas en {n} instancias.	{} played across {n} instances.
+Inicio	Home
+Continuar jugando	Continue playing
+Empezar a jugar	Start playing
+Recientes	Recent
+Ver todas	See all
+Accesos rápidos	Shortcuts
+Minecraft {}	Minecraft {}
+Jugando ahora	Playing now
+Ver instancia	View instance
+Última {}	Last {}
+Sin jugar	Not played yet
+Vanilla, Fabric, Quilt, Forge o NeoForge	Vanilla, Fabric, Quilt, Forge or NeoForge
+Explorar mods	Browse mods
+Modrinth y CurseForge	Modrinth and CurseForge
+Importar	Import
+Prism, CurseForge, ATLauncher o modpacks	Prism, CurseForge, ATLauncher or modpacks
+Bienvenido a Brasa	Welcome to Brasa
+Crea una instancia para jugar o importa las que ya tienes en otro launcher.	Create an instance to play, or import the ones you already have in another launcher.
+Probar conexión	Test connection
+Ajustes de Java	Java settings
+Ver consola	Open console
+los servidores de Minecraft	Minecraft's servers
+Fabric	Fabric
+Quilt	Quilt
+Forge	Forge
+NeoForge	NeoForge
+el servidor de Java	the Java server
+GitHub	GitHub
+Microsoft	Microsoft
+Xbox Live	Xbox Live
+Algo ha fallado	Something went wrong
+Añade una cuenta para jugar	Add an account to play
+Premium con Microsoft, o no premium sólo con un nombre.	Premium with Microsoft, or non-premium with just a name.
+Sin conexión	No connection
+No se pudo contactar con {what}. Las instancias ya instaladas se pueden jugar igual.	Couldn't reach {what}. Instances that are already installed can still be played.
+No queda espacio en el disco	The disk is full
+Libera espacio y vuelve a intentarlo.	Free up some space and try again.
+Brasa no tiene permiso para escribir ahí	Brasa isn't allowed to write there
+Cierra el juego si está abierto, o elige otra carpeta.	Close the game if it's open, or choose another folder.
+Falta un Java compatible	No compatible Java found
+Activa la descarga automática de Java o elige uno instalado.	Turn on automatic Java download or choose an installed one.
+El juego se cerró de forma inesperada	The game closed unexpectedly
+La consola tiene el diagnóstico con la causa probable.	The console has a diagnosis with the likely cause.
+Trae tus instancias de otros launchers. Se copian: el original no se toca.	Bring your instances over from other launchers. They're copied: the originals aren't touched.
+Buscar en este PC	Search this computer
+Prism, CurseForge, ATLauncher y el oficial	Prism, CurseForge, ATLauncher and the official one
+Elegir carpeta	Choose folder
+Una instancia de cualquiera de ellos	An instance from any of them
+Modpack	Modpack
+Pulsa «Buscar en este PC» para encontrar instancias de Prism, MultiMC, CurseForge, ATLauncher o el launcher oficial	Press “Search this computer” to find instances from Prism, MultiMC, CurseForge, ATLauncher or the official launcher
+Encontradas ({})	Found ({})
+Selecciona una instancia o crea una nueva	Select an instance or create a new one
+Ahorro	Saver
+Consola	Console
+Ver lo que está haciendo	See what it's doing
+Carpeta	Folder
+Abrir la carpeta de la instancia	Open the instance folder
+Descarga todo sin abrir el juego	Downloads everything without opening the game
+Reparar	Repair
+Re-verifica todos los ficheros por SHA-1 y baja sólo lo roto	Re-checks every file by SHA-1 and only downloads what's broken
+Rendimiento	Performance
+Instala Sodium, Lithium, FerriteCore y compañía si existen para esta versión	Installs Sodium, Lithium, FerriteCore and friends if they exist for this version
+Más…	More…
+Duplicar instancia	Duplicate instance
+Incluir los mundos al exportar	Include worlds when exporting
+Borrar instancia…	Delete instance…
+¿Borrar «{}» con todos sus mundos? No se puede deshacer.	Delete “{}” and all its worlds? This can't be undone.
+Sí, borrar todo	Yes, delete everything
+Mundos	Worlds
+Servidores	Servers
+Capturas	Screenshots
+Ajustes	Settings
+🔎 Filtrar mods…	🔎 Filter mods…
+Abrir carpeta de mods	Open mods folder
+Buscar mods	Find mods
+Buscar mods para esta instancia	Find mods for this instance
+Buscar actualizaciones	Check for updates
+Buscar versiones nuevas de los mods	Check for new versions of the mods
+⬆  {} actualizaciones disponibles	⬆  {} updates available
+Actualizar todo	Update all
+… y {} más	… and {} more
+Sin mods todavía	No mods yet
+Ningún mod coincide	No mods match
+General	General
+Minecraft	Minecraft
+Loader	Loader
+Entrar a servidor	Join server
+Grupo	Group
+Sin grupo (p. ej. «Con amigos»)	No group (e.g. “With friends”)
+Icono	Icon
+Elegir imagen…	Choose image…
+Java y rendimiento	Java and performance
+Memoria	Memory
+Automática	Automatic
+Minecraft {} con {active_mods} mods	Minecraft {} with {active_mods} mods
+la memoria por defecto de Ajustes	the default memory from Settings
+{} ({mb} MB) para {why}	{} ({mb} MB) for {why}
+ MB	 MB
+Modo ahorro	Saver mode
+Gastar menos CPU, GPU y batería	Use less CPU, GPU and battery
+Al jugar limita la distancia de render a 8, los FPS a 60 con vsync, y quita sombras y parte de las partículas.	While playing, it caps render distance at 8 and FPS at 60 with vsync, and turns off shadows and some particles.
+⚡  Instalar también mods de rendimiento	⚡  Also install performance mods
+Java	Java
+Automático (el del sistema)	Automatic (the system's)
+Elegir ejecutable de Java	Choose Java executable
+Argumentos JVM	JVM arguments
+Resolución	Resolution
+Personalizada	Custom
+Opciones de lanzamiento	Launch options
+Pantalla completa	Fullscreen
+Wrapper	Wrapper
+gamemoderun  /  mangohud	gamemoderun  /  mangohud
+Variables de entorno	Environment variables
+CLAVE=valor (una por línea)	KEY=value (one per line)
+Antes de jugar	Before playing
+Comando; si falla, no se lanza el juego	Command; if it fails, the game doesn't start
+Al cerrar el juego	When the game closes
+Comando (opcional)	Command (optional)
+💾  Guardar cambios	💾  Save changes
+Actualizar a {v}	Update to {v}
+Copia tus mundos y actualiza; tus mods añadidos, opciones y servidores se conservan	Backs up your worlds and updates; mods you added, options and servers are kept
+buscando versión nueva…	checking for a new version…
+✔ al día	✔ up to date
+Reintentar	Retry
+sin comprobar	not checked
+no se pudo comprobar	couldn't check
+Comprobar	Check
+Buscar actualización	Check for update
+Modpack de {}	{} modpack
+versión {}	version {}
+Desactivado	Disabled
+Borrar mod	Delete mod
+de {}	by {}
+Instancias	Instances
+Ordenar por	Sort by
+Ordenar la lista	Sort the list
+➕  Nueva instancia	➕  New instance
+🔎 Buscar…	🔎 Search…
+Por nombre, grupo, loader o versión	By name, group, loader or version
+Aún no hay instancias	No instances yet
+Ninguna instancia coincide	No instances match
+Sin grupo	No group
+Doble clic para jugar	Double-click to play
+1 línea	1 line
+{n} líneas	{n} lines
+Limpiar	Clear
+Vaciar la consola (el registro en disco de cada instancia se conserva)	Empty the console (each instance's log on disk is kept)
+📋  Copiar	📋  Copy
+Copiar lo que se ve con el filtro actual	Copy what's shown with the current filter
+{} líneas copiadas	{} lines copied
+Todo	All
+Problemas	Problems
+Brasa	Brasa
+Quitar la búsqueda	Clear search
+🔎 Buscar en la consola…  Ctrl F	🔎 Search the console…  Ctrl F
+sin coincidencias	no matches
+La consola está vacía	The console is empty
+Aquí verás lo que hace Brasa al instalar y el registro del juego mientras juegas	Here you'll see what Brasa does while installing, and the game's log while you play
+Nada con este filtro	Nothing with this filter
+Nada coincide con «{needle}»	Nothing matches “{needle}”
+Prueba con «Todo» o con otra búsqueda	Try “All” or another search
+Línea copiada	Line copied
+⬇  Ir al final	⬇  Jump to end
+Volver a lo último y seguirlo	Go back to the latest lines and follow them
+Clic para copiar	Click to copy
+1 línea de traza	1 trace line
+{n} líneas de traza	{n} trace lines
+Ocultar la traza	Hide trace
+El juego se cerró de forma inesperada (código {})	The game closed unexpectedly (code {})
+Ocultar	Hide
+No se reconoce la causa. El informe completo ayuda a quien te eche una mano: cópialo y compártelo.	The cause wasn't recognised. The full report helps whoever lends you a hand: copy it and share it.
+Abrir crash report	Open crash report
+Copiar informe	Copy report
+Diagnóstico y registro de esa partida, listo para pegar en Discord o un foro	Diagnosis and log of that session, ready to paste on Discord or a forum
+Informe copiado: pégalo donde pidas ayuda	Report copied: paste it wherever you ask for help
+Ver sólo los problemas	Show only problems
+Jugar a {}	Play {}
+Abrir {}	Open {}
+Crear	Create
+Taquilla de cosméticos	Cosmetics wardrobe
+Ir a	Go to
+Buscar «{q}» en mods	Search mods for “{q}”
+Jugar, abrir o ir a…	Play, open or go to…
+Sin resultados	No results
+↑ ↓ para elegir · Intro para abrir · Esc para cerrar	↑ ↓ to choose · Enter to open · Esc to close
+Buscar…	Search…
+Ctrl K	Ctrl K
+Preparando la skin	Preparing skin
+Instalando Java	Installing Java
+Buscando Java	Looking for Java
+Instalando el loader	Installing loader
+Descargando el juego	Downloading the game
+Copiando tus mundos	Backing up your worlds
+Comando previo	Pre-launch command
+Abriendo Minecraft	Opening Minecraft
+Preparando	Preparing
+{} h {:02} min	{} h {:02} min
+{m} min	{m} min
+CERRAR	STOP
+Cierra el juego a la fuerza (lo no guardado se pierde)	Force-closes the game (anything unsaved is lost)
+JUGAR	PLAY
+Descarga lo que falte y lanza el juego	Downloads whatever's missing and starts the game
+En juego · {}	In game · {}
+■  Cerrar	■  Stop
+▶  Jugar	▶  Play
+⟳  Actualizar	⟳  Refresh
+Volver a consultar jugadores y latencia	Check players and latency again
+Nombre (opcional)	Name (optional)
+dirección (p. ej. play.ejemplo.com)	address (e.g. play.example.com)
+Se guarda en la lista del juego: también aparece en su menú Multijugador.	It's saved to the game's list, so it also shows up in its Multiplayer menu.
+Sin servidores todavía	No servers yet
+Añade uno arriba para ver si está en línea y entrar con un clic	Add one above to see if it's online and join with one click
+• {} ms	• {} ms
+{} / {} jugadores	{} / {} players
+{}  ·  consultando…	{}  ·  checking…
+{}  ·  sin respuesta: {e}	{}  ·  no response: {e}
+Quitar de la lista	Remove from the list
+▶  Entrar	▶  Join
+Lanza el juego y entra directamente a este servidor	Starts the game and joins this server directly
+Se aplican a todas las instancias que no tengan su propio valor.	They apply to every instance that doesn't have its own value.
+💾  Guardar	💾  Save
+Memoria del juego	Game memory
+Automática según el equipo, la versión y los mods	Automatic, based on your computer, the version and the mods
+Tu equipo tiene {} de RAM. 	Your computer has {} of RAM. 
+{ram}Una instancia vanilla recibe unos 2,5 GB; cada mod suma un poco.	{ram}A vanilla instance gets about 2.5 GB; each mod adds a little.
+Descargas simultáneas	Parallel downloads
+GC optimizado (G1 afinado)	Optimised GC (tuned G1)
+Copia de mundos al jugar	Back up worlds when playing
+ por mundo	 per world
+Argumentos JVM globales	Global JVM arguments
+Java global	Global Java
+Automático: usa el instalado en el sistema	Automatic: uses the one installed on the system
+Detectar	Detect
+Descargar Java sólo si no hay ninguno compatible instalado	Download Java only if no compatible one is installed
+No se ha encontrado ningún Java instalado.	No installed Java was found.
+Java {}	Java {}
+Usar siempre	Always use
+Con el campo vacío, Brasa elige el adecuado para cada versión (8 para ≤1.16, 17 para 1.18–1.20.4, 21 para 1.20.5+, 25 para las más nuevas).	With the field empty, Brasa picks the right one for each version (8 for ≤1.16, 17 for 1.18–1.20.4, 21 for 1.20.5+, 25 for the newest).
+Red	Network
+Proxy	Proxy
+Fuente de descargas	Download source
+Sólo oficial	Official only
+Espejo primero	Mirror first
+Brasa reintenta solo por IPv4 y por espejos (BMCLAPI) si un servidor no responde. Tokens guardados en {}.	Brasa retries over IPv4 and through mirrors (BMCLAPI) on its own if a server doesn't respond. Tokens are stored in {}.
+el almacén seguro del sistema	the system's secure storage
+Discord	Discord
+Estado en el perfil	Profile status
+Mostrar en mi perfil que uso Brasa	Show on my profile that I'm using Brasa
+Launcher	Launcher
+Actualizaciones	Updates
+Buscar al arrancar	Check on startup
+Buscar ahora	Check now
+en {}	at {}
+Esta copia no sabe de dónde actualizarse: se compiló sin repositorio (las del CI sí lo llevan)	This copy doesn't know where to update from: it was built without a repository (CI builds include one)
+Esta copia no sabe de dónde actualizarse: el valor del repositorio parece un token (no se muestra)	This copy doesn't know where to update from: the repository value looks like a token (not shown)
+Esta copia no sabe de dónde actualizarse: «{repo}» no tiene la forma usuario/repo	This copy doesn't know where to update from: “{repo}” isn't in the form user/repo
+Carpeta de datos	Data folder
+Acerca de	About
+Brasa Launcher {} · licencia MIT	Brasa Launcher {} · MIT licence
+No es un producto oficial de Minecraft. No está aprobado por Mojang ni Microsoft ni asociado a ellos. «Minecraft» es una marca de Mojang Synergies AB.	Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft. “Minecraft” is a trademark of Mojang Synergies AB.
+Brasa no recoge datos: no hay telemetría ni servidores propios.	Brasa collects no data: no telemetry and no servers of its own.
+Avisos de terceros	Third-party notices
+Fuentes, librerías y lo que se descarga al usarlo	Fonts, libraries and what gets downloaded while you use it
+Privacidad	Privacy
+Licencia	Licence
+BRASA	BRASA
+launcher v{}	launcher v{}
+⬆  Actualizar a {}	⬆  Update to {}
+Sin cuenta	No account
+Pulsa para añadir una	Click to add one
+Brasa v{}	Brasa v{}
+Buscar (Ctrl K)	Search (Ctrl K)
+Actualizar a {}	Update to {}
+Copiar detalles	Copy details
+{d} de {t}	{d} of {t}
+Taquilla	Wardrobe
+Cosméticos de {who} · {}	{who}'s cosmetics · {}
+1 puesto	1 equipped
+{n} puestos	{n} equipped
+Quitarlo todo	Remove everything
+Parar	Stop
+Andar	Walk
+Ver cómo se mueve la capa al andar	See how the cape moves when walking
+De frente	Front
+De espaldas	Back
+Arrastra para girar · rueda para acercar	Drag to rotate · scroll to zoom
+Rueda de emotes	Emote wheel
+{}/{WHEEL} · tecla B en el juego	{}/{WHEEL} · B key in game
+Vacía: añade emotes desde la pestaña Emotes	Empty: add emotes from the Emotes tab
+Reproducir	Play
+Elige una instancia para saber si allí se verán	Choose an instance to find out if they'll show up there
+Ninguna instancia tuya los enseña aún en el juego (hace falta Fabric 1.21.1)	None of your instances show them in game yet (needs Fabric 1.21.1)
+1 instancia tuya los enseña en el juego	1 of your instances shows them in game
+{n} instancias tuyas los enseñan en el juego	{n} of your instances show them in game
+Color	Colour
+Color de {}	{} colour
+Otro color	Other colour
+Pulsa una ficha para verla; «A la rueda» la pone en la rueda del juego.	Click a card to preview it; “Add to the wheel” puts it on the in-game wheel.
+Pasa el ratón por una ficha para probártela; pulsa para ponértela o quitártela.	Hover over a card to try it on; click to put it on or take it off.
+En la rueda	On the wheel
+Puesto	Equipped
+Se puede teñir	Can be dyed
+En la rueda · quitar	On the wheel · remove
+Rueda llena	Wheel full
+Añadir a la rueda	Add to the wheel
+La rueda tiene sitio para {WHEEL}: quita uno antes	The wheel fits {WHEEL}: remove one first
+Ver web ↗	Website ↗
+Cerrar	Close
+por {author}	by {author}
+📁  Abrir saves	📁  Open saves
+📁  Abrir copias	📁  Open backups
+Todavía no hay mundos: se crean al jugar.	No worlds yet: they're created when you play.
+💾  Copiar ahora	💾  Back up now
+Copias de seguridad	Backups
+Aún no hay copias. Se hacen solas al jugar (Ajustes) o con «Copiar ahora».	No backups yet. They're made automatically when you play (Settings) or with “Back up now”.
+Sí, borrar	Yes, delete
+Borrar copia	Delete backup
+↩  Restaurar	↩  Restore
+El mundo actual se conserva aparte	The current world is kept aside
+# --- fuera de src/gui o en datos (se traducen con tr() o t!() a mano)
+Idioma · Language	Language · Idioma
+Automático	Automatic
+Español	Español
+English	English
+Microsoft · demo (sin juego)	Microsoft · demo (no game)
+No premium · {}	Non-premium · {}
+Tiempo jugado	Time played
+Capas	Capes
+Sombreros	Hats
+Espalda	Back
+Emotes	Emotes
+Mascotas	Pets
+se ven en el juego	they show up in game
+aún no se ven en el juego; su adaptador está en camino	they don't show up in game yet; its adapter is on the way
+Vanilla no carga mods; sólo se ven aquí	Vanilla doesn't load mods; they only show up here
+esta versión no tiene adaptador	this version has no adapter
+Noche estrellada	Starry night
+Aurora	Aurora
+Lava	Lava
+Real	Royal
+Ajedrez	Chessboard
+Arcoíris	Rainbow
+Clásica	Classic
+Corona	Crown
+Gorro de lana	Beanie
+Cuernos	Horns
+Aureola	Halo
+Sombrero de copa	Top hat
+Orejas de gato	Cat ears
+Gafas de sol	Sunglasses
+Alas de dragón	Dragon wings
+Alas de ángel	Angel wings
+Mochila	Backpack
+Propulsor	Jetpack
+Carcaj	Quiver
+Saludar	Wave
+Bailar	Dance
+Aplaudir	Clap
+Victoria	Victory
+Dab	Dab
+Facepalm	Facepalm
+Pensar	Think
+Sentarse	Sit
+Brasita	Ember
+Minigato	Minicat
+Murciélago	Bat
+Gelatina	Jelly
+Llamas que suben desde el borde, como las del logo	Flames rising from the hem, like the logo
+Azul profundo con luna y estrellas que titilan	Deep blue with a moon and twinkling stars
+Ondas verdes y violetas que se mueven	Moving green and violet waves
+Roca fundida que fluye despacio	Slowly flowing molten rock
+Púrpura con ribete y emblema dorados	Purple with a golden trim and emblem
+Cuadros blancos y negros	Black and white squares
+Franjas de todos los colores	Stripes of every colour
+Lisa, del color que quieras, con la llama de Brasa	Plain, in any colour you like, with the Brasa flame
+Oro con gemas	Gold with gems
+Con pompón; elige el color	With a pompom; choose the colour
+De marfil, curvados hacia fuera	Ivory, curving outwards
+Flota y gira sobre la cabeza	Floats and spins above your head
+Negro con cinta de color	Black with a coloured band
+Puntiagudas, del color que quieras	Pointy, in any colour you like
+Cristales oscuros con brillo	Dark lenses with a glint
+Membrana violeta; se baten despacio	Violet membrane; they flap slowly
+Plumas blancas	White feathers
+Para llevarlo todo; elige el color	To carry everything; choose the colour
+Dos depósitos y llama encendida	Two tanks and a lit flame
+Flechas a la espalda, en diagonal	Arrows on your back, at an angle
+Hola con la mano en alto	Hello with your hand up
+Brazos arriba, de lado a lado	Arms up, side to side
+Bravo	Bravo
+Saltos con los brazos en alto	Jumping with your arms up
+El clásico	The classic
+La mano a la cara	Hand to face
+Mano en la barbilla	Hand on chin
+Al suelo, hasta que te muevas	On the floor, until you move
+Un espíritu de fuego que te acompaña	A fire spirit that keeps you company
+Flota a tu lado moviendo la cola	Floats beside you wagging its tail
+Bate las alas sin parar	Never stops flapping
+Cubo translúcido que rebota	A bouncy translucent cube
+animada	animated
+Añadir texturas (.zip)	Add resource packs (.zip)
+Añadir shaders (.zip)	Add shaders (.zip)
+Exportar como .mrpack	Export as .mrpack
+Importar modpack (.mrpack de Modrinth o .zip de CurseForge)	Import modpack (Modrinth .mrpack or CurseForge .zip)
+Añade un .zip, arrástralo a la carpeta o búscalas en Explorar	Add a .zip, drop it into the folder or find some in Browse
+Añade un .zip o búscalos en Explorar	Add a .zip or find some in Browse
+📦  Importar .mrpack / .zip	📦  Import .mrpack / .zip
+.mrpack de Modrinth o .zip de CurseForge	Modrinth .mrpack or CurseForge .zip
+Añadir .jar	Add .jar
+Añadir mods desde ficheros .jar	Add mods from .jar files
+Búscalos en Explorar o arrastra archivos .jar a la ventana	Find some in Browse or drag .jar files onto the window
+Suelta aquí: .mrpack / .zip → nueva instancia · .jar → mod	Drop here: .mrpack / .zip → new instance · .jar → mod
+accounts.json (permisos 600)	accounts.json (permissions 600)
+# --- diagnóstico de cierres (src/diagnose.rs)
+Hace falta Java {n} o superior. En Ajustes → Java pulsa «Detectar» y elige uno compatible, o activa la descarga automática de Java.	Java {n} or newer is needed. In Settings → Java press “Detect” and pick a compatible one, or turn on automatic Java download.
+Un Java demasiado antiguo para esta versión o mod. En Ajustes → Java elige uno más nuevo o activa la descarga automática.	A Java that's too old for this version or mod. In Settings → Java pick a newer one or turn on automatic download.
+Versión de Java incompatible	Incompatible Java version
+El juego se quedó sin memoria	The game ran out of memory
+Sube la memoria de la instancia (Ajustes de la instancia → Memoria). Con muchos mods suelen hacer falta 6-8 GB; no pases de lo que tengas libre.	Give the instance more memory (instance Settings → Memory). With lots of mods you usually need 6-8 GB; don't go over what you have free.
+La JVM no pudo reservar la memoria pedida	The JVM couldn't reserve the requested memory
+Baja la memoria de la instancia. Si pusiste más de ~3 GB con un Java de 32 bits, instala un Java de 64 bits.	Lower the instance's memory. If you set more than ~3 GB with a 32-bit Java, install a 64-bit Java.
+Falta una dependencia o hay una versión incompatible. Usa «Buscar actualizaciones» en la pestaña Mods; si sigue igual, desactiva el último mod que añadiste.	A dependency is missing or a version is incompatible. Use “Check for updates” in the Mods tab; if nothing changes, disable the last mod you added.
+ Pista del log: {}	 Hint from the log: {}
+Mods incompatibles o con dependencias sin cumplir	Incompatible mods or unmet dependencies
+Dependencia obligatoria ausente (Forge/NeoForge)	Required dependency missing (Forge/NeoForge)
+Instala la dependencia que indica el log (busca «Mod ID») con la misma versión de Minecraft.	Install the dependency the log mentions (look for “Mod ID”) for the same Minecraft version.
+Un mod falla al modificar el juego (Mixin)	A mod fails while modifying the game (Mixin)
+Suele ser un mod hecho para otra versión de Minecraft o de otro mod. Actualiza los mods o quita el que aparece en el log junto a «Mixin apply failed».	It's usually a mod made for another version of Minecraft or of another mod. Update your mods or remove the one shown in the log next to “Mixin apply failed”.
+Falta una clase o método (versión de mod incorrecta)	A class or method is missing (wrong mod version)
+Casi siempre es un mod o librería de una versión distinta. Comprueba que todos los mods son de la versión de Minecraft y del loader de la instancia.	It's almost always a mod or library from a different version. Check that every mod matches the instance's Minecraft version and loader.
+Problema con el controlador gráfico (OpenGL)	Graphics driver problem (OpenGL)
+Actualiza el driver de tu tarjeta gráfica. En portátiles con dos GPU, fuerza la dedicada para el Java que usa Brasa.	Update your graphics card driver. On laptops with two GPUs, force the dedicated one for the Java that Brasa uses.
+Un archivo del juego está corrupto	A game file is corrupted
+Pulsa «Reparar» en la instancia: re-verifica todo por SHA-1 y vuelve a bajar solo lo roto.	Press “Repair” on the instance: it re-checks everything by SHA-1 and only downloads what's broken.
+Sesión no válida	Invalid session
+Cierra y vuelve a añadir la cuenta en la pestaña Cuentas. Si juegas sin premium, el servidor debe tener online-mode=false.	Remove the account and add it again in the Accounts tab. If you play without premium, the server must have online-mode=false.
+Puerto ocupado	Port in use
+Otro programa (o otra copia del juego) usa el puerto. Ciérralo e inténtalo de nuevo.	Another program (or another copy of the game) is using the port. Close it and try again.
+vacío = sistema · p. ej. http://proxy.empresa:8080	empty = system · e.g. http://proxy.company:8080
+sin cuenta	guest
+Abrir como archivo	Open as file
+Con el programa del sistema	With the system's app
+Texto copiado	Text copied
+# --- instalador (src/setup)
+Instalar Brasa Launcher	Install Brasa Launcher
+Desinstalar Brasa Launcher	Uninstall Brasa Launcher
+Actualizar Brasa Launcher	Update Brasa Launcher
+Un launcher de Minecraft rápido, con mods, instancias, servidores y cosméticos.	A fast Minecraft launcher, with mods, instances, servers and cosmetics.
+Dónde	Where
+Sólo para tu usuario: no pide permisos de administrador.	Just for your user: no administrator rights needed.
+Acceso directo en el escritorio	Desktop shortcut
+Abrir Brasa al terminar	Open Brasa when finished
+Ya está instalado: se sustituye por esta versión. Tus instancias y cuentas no se tocan.	It's already installed: it gets replaced with this version. Your instances and accounts aren't touched.
+Al instalar aceptas la licencia MIT.	By installing you accept the MIT licence.
+Ver licencia	View licence
+ACTUALIZAR	UPDATE
+INSTALAR	INSTALL
+Se quitan el programa y sus accesos directos. Tus instancias, mundos y cuentas se conservan, por si vuelves.	The program and its shortcuts are removed. Your instances, worlds and accounts are kept, in case you come back.
+Borrar también mis datos	Also delete my data
+Instancias, mundos, capturas, ajustes y cuentas. No se puede deshacer.	Instances, worlds, screenshots, settings and accounts. This can't be undone.
+DESINSTALAR	UNINSTALL
+Instalando…	Installing…
+Copiando Brasa	Copying Brasa
+Creando los accesos directos	Creating shortcuts
+Apuntándolo en el sistema	Registering with the system
+Desinstalando…	Uninstalling…
+Brasa está listo	Brasa is ready
+Lo encontrarás en el menú Inicio como «Brasa Launcher».	You'll find it in the Start menu as “Brasa Launcher”.
+ABRIR BRASA	OPEN BRASA
+Brasa se ha desinstalado	Brasa has been uninstalled
+También se han borrado tus datos.	Your data was deleted too.
+Tus instancias y cuentas siguen ahí si algún día vuelves.	Your instances and accounts are still there if you ever come back.
+Si Brasa está abierto, ciérralo y vuelve a intentarlo.	If Brasa is open, close it and try again.
+Lo encontrarás en el menú de aplicaciones como «Brasa Launcher».	You'll find it in your applications menu as “Brasa Launcher”.
+Cambiar…	Change…
+Elegir otra carpeta	Choose another folder
+Dónde instalar Brasa	Where to install Brasa
+Escribe o elige una carpeta.	Type or choose a folder.
+No se puede instalar ahí: {e}. Elige una carpeta tuya, por ejemplo dentro de tu usuario.	Can't install there: {e}. Choose a folder of your own, for example inside your user folder.
+Se actualiza donde ya estaba instalado.	It updates where it was already installed.
+Volver a la predeterminada	Back to the default
+esa carpeta necesita permisos de administrador	that folder needs administrator rights
+no se puede escribir en {}	can't write to {}
+sólo funciona por IPv4 ({} ms): IPv6 roto, Brasa lo esquiva solo	only works over IPv4 ({} ms): IPv6 is broken, Brasa works around it on its own
+no responde	not responding
+{why}, pero el espejo {host} funciona ({ms} ms): Brasa lo usa solo	{why}, but the mirror {host} works ({ms} ms): Brasa uses it automatically
+{} no responde: se usa la lista de versiones guardada	{} isn't responding: using the saved version list
+(los espejos están desactivados: «Fuente de descargas» en Ajustes → Red)	(mirrors are turned off: “Download source” in Settings → Network)
+no se puede conectar con {first} ni con sus espejos ({rest}). Como no responde ninguno, suele ser la red de este equipo: un proxy o filtro de empresa/instituto, el firewall o antivirus, o un bloqueo de tu proveedor de internet. Prueba con otra red (por ejemplo, los datos del móvil) o con una VPN, y pulsa «Probar conexión» en Ajustes → Red	can't connect to {first} or its mirrors ({rest}). Since none of them respond, it's usually this computer's network: a work/school proxy or filter, the firewall or antivirus, or a block by your internet provider. Try another network (for example your phone's data) or a VPN, and press “Test connection” in Settings → Network
+Subiendo el informe	Uploading the report
+Informar de un problema	Report a problem
+Ayuda	Help
+Se sube un informe a mclo.gs (el servicio de registros de la comunidad de Minecraft) y te da un enlace para pasárselo a quien te ayude. Antes se quitan tus datos privados: tokens de sesión, tu usuario y tus carpetas.	A report is uploaded to mclo.gs (the Minecraft community's log service) and you get a link to share with whoever is helping you. Your private data is removed first: session tokens, your username and your folders.
+¿Qué estabas haciendo y qué pasó?	What were you doing and what happened?
+Por ejemplo: al darle a Jugar con Create se queda en negro y se cierra	For example: when I press Play on Create the screen goes black and it closes
+Incluir el registro de la consola (recomendado)	Include the console log (recommended)
+También va la instancia elegida: {}, con su lista de mods.	The selected instance is included too: {}, with its mod list.
+Ocultar lo que se envía	Hide what gets sent
+Ver exactamente lo que se envía	See exactly what gets sent
+Subiendo…	Uploading…
+Subir informe	Upload report
+Informe subido. Pasa este enlace a quien te ayude:	Report uploaded. Share this link with whoever is helping you:
+📋  Copiar enlace	📋  Copy link
+Enlace copiado	Link copied
+¿Es un fallo de Brasa? Ábrelo en GitHub: el enlace del registro ya va dentro.	Is it a Brasa bug? Open it on GitHub: the log link is already included.
+Hecho	Done
+Abrir un issue en GitHub	Open a GitHub issue
+Problema en Brasa	Problem in Brasa
+No se pudo subir el informe	Couldn't upload the report
+Puedes copiarlo y pegarlo tú donde pidas ayuda (ya va sin tus datos privados).	You can copy it and paste it yourself wherever you ask for help (private data already removed).
+📋  Copiar informe	📋  Copy report
+Sube el registro sin tus datos privados y te da un enlace para pedir ayuda	Uploads the log without your private data and gives you a link to ask for help
+Pedir ayuda	Get help
+Aún no se ha cargado la lista de versiones de Minecraft	The Minecraft version list hasn't loaded yet
+Preparando tu primera instancia	Setting up your first instance
+Buscando la versión con mods de rendimiento	Finding the version with performance mods
+Rendimiento {}	Performance {}
+Atrás	Back
+¡Bienvenido a Brasa!	Welcome to Brasa!
+Vamos a dejarlo listo en un minuto. Primero, ¿en qué idioma quieres usarlo?	Let's get you set up in a minute. First, which language do you want to use?
+Detectado en tu sistema	Detected on your system
+Puedes cambiarlo cuando quieras en Ajustes → Launcher.	You can change it any time in Settings → Launcher.
+SIGUIENTE	NEXT
+¿Con qué cuenta vas a jugar?	Which account will you play with?
+Tus cuentas se guardan sólo en este equipo. Puedes añadir más luego.	Your accounts are only stored on this computer. You can add more later.
+Tengo Minecraft	I own Minecraft
+Inicia sesión con tu cuenta de Microsoft. Skins, servidores premium y Realms.	Sign in with your Microsoft account. Skins, premium servers and Realms.
+Jugar sin premium	Play without premium
+Elige un nombre. Puedes usar skin con Ely.by o LittleSkin.	Pick a name. You can use a skin with Ely.by or LittleSkin.
+Sin skin (offline)	No skin (offline)
+Tu nombre en el juego	Your in-game name
+✔ nombre válido	✔ valid name
+3 a 16 letras, números o _	3 to 16 letters, numbers or _
+Usuario o correo de {}	{} username or email
+La contraseña no se guarda: sólo se usa para entrar.	The password isn't stored: it's only used to sign in.
+Se ha abierto {} en el navegador. Escribe este código:	{} has opened in your browser. Enter this code:
+Código copiado	Code copied
+Abrir la página	Open the page
+Iniciando sesión…	Signing in…
+ESPERANDO…	WAITING…
+Saltar este paso	Skip this step
+Tu primera instancia	Your first instance
+Una instancia es una versión de Minecraft con sus propios mods, mundos y ajustes.	An instance is a Minecraft version with its own mods, worlds and settings.
+La última versión	The latest version
+Minecraft tal cual, sin mods.	Plain Minecraft, no mods.
+Con mods de rendimiento	With performance mods
+Recomendado	Recommended
+Más FPS y menos tirones, con la misma pinta de siempre.	More FPS and less stutter, looking just the same.
+Traer las de otro launcher	Bring them from another launcher
+No hemos encontrado otros launchers en este equipo. Puedes elegir la carpeta de una instancia.	We didn't find other launchers on this computer. You can pick an instance folder.
+Hemos encontrado instancias en tu equipo:	We found instances on your computer:
+Marca las que quieras traer (se copian: las originales no se tocan):	Tick the ones to bring over (they're copied: the originals aren't touched):
+Cargando la lista de versiones…	Loading the version list…
+ELEGIR CARPETA	PICK FOLDER
+Esto es lo que hemos preparado. Tus instancias se están copiando.	Here's what we set up. Your instances are being copied.
+Esto es lo que hemos preparado. Minecraft se está descargando en segundo plano.	Here's what we set up. Minecraft is downloading in the background.
+Esto es lo que hemos preparado.	Here's what we set up.
+¡Todo listo!	All set!
+Idioma	Language
+Cuenta	Account
+Primera instancia	First instance
+Listo	Done
+Ninguna todavía: añádela en Cuentas antes de jugar	None yet: add one in Accounts before playing
+Instancia	Instance
+{n} importadas de otros launchers	{n} imported from other launchers
+{n} mods	{n} mods
+Ninguna: puedes crearla luego en Instancias	None: you can create one later in Instances
+No se pudo preparar la instancia: {e}	Couldn't set up the instance: {e}
+Puedes repetir esta bienvenida desde Ajustes → Acerca de.	You can run this welcome again from Settings → About.
+VER MIS INSTANCIAS	SEE MY INSTANCES
+EMPEZAR A JUGAR	START PLAYING
+IR AL LAUNCHER	GO TO THE LAUNCHER
+Ir al launcher	Go to the launcher
+Ver la bienvenida otra vez	Show the welcome again
+Esta copia de Brasa no trae el inicio de sesión con Microsoft: usa la versión oficial de las releases.	This copy of Brasa doesn't include Microsoft sign-in: use the official release build.
+(obligatorio para cualquier servidor)	(required for any server)
+APAGANDO	STOPPING
+Abre playit.gg para crear tu cuenta o entrar, y autorizar a Brasa	Opens playit.gg to create an account or sign in, and authorize Brasa
+Abrir otra vez	Open again
+Acceso	Access
+Acepto el	I accept the
+Activada: sólo entran estos jugadores.	On: only these players can join.
+Actualizar	Update
+Ajustes del servidor guardados	Server settings saved
+Amigos de fuera	Friends elsewhere
+Amigos en tu casa	Friends at home
+Apagado	Off
+Apruébalo en la página de playit.gg que se ha abierto	Approve it on the playit.gg page that just opened
+Arrancando	Starting
+Aventura	Adventure
+Aún no hay servidores	No servers yet
+Borrar servidor	Delete server
+Buscando…	Searching…
+Buscar {what} en Modrinth	Search {what} on Modrinth
+Carpeta y borrado	Folder and deletion
+Cierra sin guardar: sólo si no responde	Closes without saving: only if it's not responding
+Con playit.gg (gratis): sin tocar el router.	With playit.gg (free): no router setup.
+Conectados ({n})	Online ({n})
+Corre en este equipo mientras Brasa está abierto. Te damos la dirección para que entren tus amigos.	It runs on this computer while Brasa is open. We give you the address for your friends to join.
+Crea una instancia con la misma versión y el servidor ya en su lista	Creates an instance with the same version and the server already in its list
+Crea una instancia con la misma versión y los mods que hacen falta, con el servidor en su lista. Para tus amigos: expórtala (.mrpack) y pásasela.	Creates an instance with the same version and the mods it needs, with the server in its list. For your friends: export it (.mrpack) and send it to them.
+Crear servidor	Create server
+Creativo	Creative
+DETENER	STOP
+Desactivada: entra cualquiera. Actívala en Ajustes.	Off: anyone can join. Turn it on in Settings.
+Descartar	Discard
+Desenlazar	Unlink
+Deteniéndose	Stopping
+Detén el servidor antes	Stop the server first
+Detén el servidor para quitarlo	Stop the server to remove it
+Dificultad	Difficulty
+Difícil	Hard
+Dirección copiada: pásasela a tus amigos	Address copied: send it to your friends
+Distancia de visión	View distance
+EULA de Minecraft	Minecraft EULA
+Elige una versión	Pick a version
+En marcha	Running
+Enlazar playit.gg	Link playit.gg
+Enviar	Send
+Escribe un comando (op, whitelist add, say…)	Type a command (op, whitelist add, say…)
+Espectador	Spectator
+Expulsar	Kick
+Extremo (hardcore)	Hardcore
+Falta aceptar el EULA	You need to accept the EULA
+Falta el nombre	Name missing
+Falta la versión	Version missing
+Forzar cierre	Force close
+Fácil	Easy
+Guarda el mundo y apaga el servidor	Saves the world and shuts the server down
+Guardar	Save
+Hacer operador	Make operator
+INICIAR	START
+Inicia el servidor para añadir o quitar jugadores: los cambios se hacen con sus comandos.	Start the server to add or remove players: changes are made with its commands.
+Inicia el servidor para escribir comandos	Start the server to type commands
+Instalado: {} (se carga al reiniciar el servidor)	Installed: {} (loads when the server restarts)
+Instalados ({n})	Installed ({n})
+Instalando en el servidor	Installing on the server
+Instancia «{}» creada, con el servidor en su lista	Instance “{}” created, with the server in its list
+Jugadores	Players
+La consola del servidor sale aquí al iniciarlo.	The server console shows up here when you start it.
+La semilla sólo cuenta al crear el mundo (el primer arranque).	The seed only matters when the world is created (first start).
+Lista blanca ({n})	Whitelist ({n})
+Lista blanca: sólo entran los jugadores que añadas	Whitelist: only players you add can join
+Lithium, Chunky, Create…	Lithium, Chunky, Create…
+Los cambios se notan al reiniciar el servidor.	Changes take effect when the server restarts.
+LuckPerms, EssentialsX, WorldEdit…	LuckPerms, EssentialsX, WorldEdit…
+Mensaje en la lista (MOTD)	Server list message (MOTD)
+Minecraft tal cual, sin nada más.	Plain Minecraft, nothing else.
+Modo de juego	Game mode
+Modpacks grandes (Create…) en versiones nuevas.	Big modpacks (Create…) on newer versions.
+Mods clásicos y versiones antiguas.	Classic mods and older versions.
+Mods ligeros y de rendimiento.	Lightweight and performance mods.
+Mundo, plugins, mods y configuración	World, plugins, mods and config
+Máximo de jugadores	Max players
+Nadie ahora mismo	Nobody right now
+Ninguno todavía: búscalos aquí abajo.	None yet: search for them below.
+No	No
+Nombre en Minecraft	Minecraft name
+Normal	Normal
+Nuevo servidor	New server
+Olvida la clave de playit.gg en este equipo	Forgets the playit.gg key on this computer
+Operador	Operator
+Operadores ({n})	Operators ({n})
+PREPARANDO	PREPARING
+Pacífico	Peaceful
+Partida	Gameplay
+Permitir volar	Allow flight
+Plugins	Plugins
+Plugins (Bukkit, Spigot, Paper). Rápido y el más usado.	Plugins (Bukkit, Spigot, Paper). Fast and the most used.
+Por ejemplo: Survival con amigos	For example: Survival with friends
+Premium y no premium	Premium and non-premium
+Puede usar todos los comandos	Can use every command
+Puerto	Port
+PvP	PvP
+Quitar operador	Remove operator
+Se activa al reiniciar el servidor	Takes effect when the server restarts
+Se aplica al reiniciar el servidor	Applies when the server restarts
+Se borra todo, mundo incluido. ¿Seguro?	Everything gets deleted, world included. Sure?
+Semilla del mundo	World seed
+Servidor borrado	Server deleted
+Servidor creado: pulsa Iniciar (la primera vez descarga el software)	Server created: press Start (the first time it downloads the software)
+Si {k} aún no está para esa versión, te lo diremos al arrancar.	If {k} isn't out for that version yet, we'll tell you when starting.
+Sin premium y sin lista blanca, cualquiera que tenga la dirección puede entrar con cualquier nombre (también el tuyo).	Without premium and without a whitelist, anyone with the address can join under any name (yours too).
+Sin premium, Minecraft no comprueba las cuentas: cualquiera podría entrar con el nombre de otro. Por eso la lista blanca va activada: sólo entran los que añadas.	Without premium, Minecraft doesn't check accounts: anyone could join under someone else's name. That's why the whitelist is on: only people you add can join.
+Sin red local detectada	No local network detected
+Supervivencia	Survival
+Sólo cuentas de Microsoft con Minecraft comprado.	Only Microsoft accounts that own Minecraft.
+Sólo premium	Premium only
+También en los jugadores	Players need it too
+Tipo	Type
+Túnel de playit.gg al iniciar	playit.gg tunnel on start
+Túnel de playit.gg desactivado	playit.gg tunnel off
+Vacía: aleatoria	Empty: random
+el servidor no está en marcha	the server isn't running
+mods	mods
+playit.gg desenlazado de este equipo	playit.gg unlinked from this computer
+playit.gg enlazado: activa el túnel en el servidor	playit.gg linked: turn the tunnel on in the server
+plugins	plugins
+{n} conectados · {v}	{n} online · {v}
+{} · {n} conectados	{} · {n} online
+¿Quién puede entrar?	Who can join?
+➕  Nuevo servidor	➕  New server
+🎮  Jugar aquí	🎮  Play here
+📂  Abrir carpeta	📂  Open folder
+📋 Copiar	📋 Copy
+Crea el túnel en playit.gg: «Add Tunnel» → Minecraft Java → este agente, dirección local 127.0.0.1 y puerto {p}. Brasa lo detecta solo.	Create the tunnel on playit.gg: “Add Tunnel” → Minecraft Java → this agent, local address 127.0.0.1 and port {p}. Brasa picks it up by itself.
+Abrir playit.gg	Open playit.gg
+Apagando los servidores…	Shutting down the servers…
+Guardan el mundo antes de cerrar. Brasa se cierra solo al terminar.	They save the world before closing. Brasa closes by itself when done.
+Quedan {n}	{n} left
+IP oculta	IP hidden
+(Brasa entra solo)	(Brasa joins by itself)
++  Invitar amigo	+  Invite friend
+1 hora	1 hour
+24 horas	24 hours
+7 días	7 days
+A «{s}», con la invitación que creaste para {n}. Equipo {k}.	To “{s}”, with the invite you created for {n}. Device {k}.
+Abierto a tu red de casa sin Brasa	Open to your home network without Brasa
+Aceptar	Accept
+Amigos	Friends
+Amigos con Brasa	Friends with Brasa
+Anular	Cancel invite
+CONECTANDO	CONNECTING
+Cada amigo entra con un código personal. Su equipo queda atado a su nombre: nadie puede entrar haciéndose pasar por él, aunque el servidor sea no premium.	Each friend joins with a personal code. Their device gets tied to their name: nobody can join pretending to be them, even on a non-premium server.
+Cifrado	Encryption
+Conectando con tu amigo	Connecting to your friend
+Conectando…	Connecting…
+Conexión	Connection
+Conexión directa activada (más rápida)	Direct connection on (faster)
+Copiar mensaje para WhatsApp	Copy message for WhatsApp
+Creando la invitación	Creating the invite
+Crear invitación	Create invite
+Cualquiera en tu wifi puede conectarse a tu IP local, sin invitación.	Anyone on your wifi can connect to your local IP, without an invite.
+Código	Code
+Código copiado: pásaselo sólo a esa persona	Code copied: send it only to that person
+Código para {n}	Code for {n}
+Código personal y de un solo uso: sin abrir puertos, cifrado de punta a punta	Personal one-time code: no port opening, end-to-end encrypted
+Código válido	Valid code
+DE AMIGOS	FROM FRIENDS
+Deja de poder entrar al momento	They can't join anymore, right away
+El código caduca en	The code expires in
+El código es personal y de un solo uso. Su equipo quedará atado al nombre que pongas.	The code is personal and one-time. Their device will be tied to the name you enter.
+Emparejado: tu equipo queda atado a tu nombre	Paired: your device is tied to your name
+Emparejados ({n})	Paired ({n})
+En tu Minecraft	In your Minecraft
+En tu casa, sin Brasa	At home, without Brasa
+Entrarás con ese nombre: tu cuenta en Brasa tiene que llamarse igual.	You'll join with that name: your Brasa account must have the same name.
+Esperando a que tu amigo te acepte…	Waiting for your friend to accept you…
+Estado	Status
+Exactamente como se llama en el juego	Exactly as it appears in the game
+Invitaciones pendientes ({n})	Pending invites ({n})
+Invitación a «{s}» para {n}	Invite to “{s}” for {n}
+Invitar amigo	Invite friend
+JUGANDO	PLAYING
+Mensaje copiado	Message copied
+Nadie todavía: pulsa «Invitar amigo».	Nobody yet: press “Invite friend”.
+No se encontraron en Modrinth: {m}. Pídeselos a tu amigo.	Not found on Modrinth: {m}. Ask your friend for them.
+Ocultar mi IP	Hide my IP
+Ocultar mi IP: los amigos se conectan siempre por el relé	Hide my IP: friends always connect through the relay
+Olvidar este servidor	Forget this server
+Pega el código que te ha pasado tu amigo	Paste the code your friend sent you
+Pega el código que te ha pasado. Sólo hace falta la primera vez.	Paste the code you were sent. Only needed the first time.
+Plan B: playit.gg	Plan B: playit.gg
+Portero	Gatekeeper
+Preparando Minecraft (versión y mods del servidor)	Preparing Minecraft (the server's version and mods)
+Preparando la conexión…	Preparing the connection…
+QUIC + TLS 1.3 · identidad {k}	QUIC + TLS 1.3 · identity {k}
+Rechazar	Decline
+Recomendado apagado: el servidor sólo escucha en este equipo y se entra con Brasa (invitación y cifrado).	Recommended off: the server only listens on this computer and people join through Brasa (invite and encryption).
+Revocar	Revoke
+Se crea al pulsar JUGAR, con la versión y los mods del servidor.	Created when you press PLAY, with the server's version and mods.
+Servidor encontrado e identidad comprobada	Server found and identity verified
+Si el servidor cambia de versión o de mods, Brasa los pone igual antes de entrar.	If the server changes version or mods, Brasa matches them before joining.
+Sin conectar: se conecta al pulsar JUGAR	Not connected: connects when you press PLAY
+Su nombre en Minecraft	Their Minecraft name
+Te pregunta antes de emparejar a alguien con una invitación	Asks you before pairing someone with an invite
+Todo pasa por el relé cifrado: nadie ve tu IP. Algo más lento. Vale para todos tus servidores.	Everything goes through the encrypted relay: nobody sees your IP. A bit slower. Applies to all your servers.
+Tu amigo puede quitarte el acceso cuando quiera.	Your friend can revoke your access at any time.
+Unirse	Join
+Unirse a un amigo	Join a friend
+Uniéndote al servidor de tu amigo	Joining your friend's server
+caduca en {n} h	expires in {n} h
+caduca en {n} min	expires in {n} min
+desconectado	offline
+equipo {k} · {a}	device {k} · {a}
+hace {n} días	{n} days ago
+hace {n} h	{n} h ago
+hace {n} min	{n} min ago
+tú: {n} · {v}	you: {n} · {v}
+y {n} más esperando	and {n} more waiting
+{n} emparejados · {m} conectados	{n} paired · {m} online
+{} ya no puede entrar a este servidor	{} can no longer join this server
+¡Listo! Ya lo tienes en «De amigos». Pulsa JUGAR cuando quieras.	Done! It's now under “From friends”. Press PLAY whenever you want.
+• Conexión directa · {ms} ms	• Direct connection · {ms} ms
+• Por relé · {ms} ms	• Via relay · {ms} ms
+• conexión directa · {ms} ms	• direct connection · {ms} ms
+• por relé · {ms} ms	• via relay · {ms} ms
+📋 Copiar código	📋 Copy code
+🔒 Cifrado de punta a punta. Brasa probará la conexión directa; si tu red no la deja, irá por relé, también cifrado.	🔒 End-to-end encrypted. Brasa tries a direct connection; if your network won't allow it, it goes through a relay, also encrypted.
+🔒 El código lleva la identidad de tu servidor y un secreto. Si alguien lo usa antes que tu amigo, te saldrá en el portero.	🔒 The code carries your server's identity and a secret. If someone uses it before your friend, you'll see it in the gatekeeper.
+🔒 Emparejado como {n}	🔒 Paired as {n}
+🔗  Unirse a un amigo	🔗  Join a friend
+🚪 {n} quiere unirse	🚪 {n} wants to join
+¡Te invito a mi servidor de Minecraft «{s}»! Abre Brasa → Servidores → «Unirse a un amigo» y pega este código (es sólo para ti y caduca):\n\n{c}	Join my Minecraft server “{s}”! Open Brasa → Servers → “Join a friend” and paste this code (it's just for you and it expires):\n\n{c}
+Ya estás emparejado: lo tienes en «De amigos» y se volverá a preparar al pulsar JUGAR.	You're already paired: it's under “From friends” and will be prepared again when you press PLAY.
+Este servidor te espera como «{n}» y tu cuenta se llama distinto. Añade una cuenta llamada {n} en Cuentas (si es no premium, basta con el nombre).	This server expects you as “{n}” and your account has a different name. Add an account called {n} in Accounts (for non-premium, the name is enough).
+1 conectado	1 online
+1 conectado · {v}	1 online · {v}
+1 emparejado	1 paired
+Brasa descarga el software y lo deja listo. Funciona mientras Brasa está abierto.	Brasa downloads the software and sets it up. It runs while Brasa is open.
+Cada uno recibe un código personal y de un solo uso, atado a su nombre de Minecraft.	Each one gets a personal one-time code, tied to their Minecraft name.
+Con mods: tus amigos necesitan los mismos (Brasa se los pone)	With mods: your friends need the same ones (Brasa installs them)
+Conexión directa entre equipos y, si su red no la deja, por un relé cifrado. Nadie puede hacerse pasar por ellos.	Direct connection between computers and, if their network won't allow it, through an encrypted relay. Nobody can pretend to be them.
+Crea un servidor en tu equipo o entra al de un amigo. Sin abrir puertos y cifrado de punta a punta.	Create a server on your computer or join a friend's. No port opening and end-to-end encrypted.
+Crear un servidor	Create a server
+Creas el servidor	You create the server
+Cómo funciona	How it works
+Desactivado: actívalo en Ajustes → Acceso si alguien no usa Brasa.	Off: turn it on in Settings → Access if someone doesn't use Brasa.
+En marcha · {v}	Running · {v}
+Entran desde su Brasa	They join from their Brasa
+Invitas a tus amigos	You invite your friends
+Juega con tus amigos	Play with your friends
+Modpacks grandes como Create.	Big modpacks like Create.
+Otras formas de entrar	Other ways to join
+Pega el código que te ha pasado	Paste the code they sent you
+Plugins de Bukkit, Spigot y Paper. El más usado.	Bukkit, Spigot and Paper plugins. The most used.
+Sin mods: tus amigos entran con Minecraft normal	No mods: your friends join with regular Minecraft
+Unirme al de un amigo	Join a friend's server
+Vanilla, con plugins o con mods	Vanilla, with plugins or with mods
+Ver amigos	See friends
+nadie emparejado todavía	nobody paired yet
+{n} conectados	{n} online
+{n} emparejados	{n} paired
+{} · 1 conectado	{} · 1 online
+🎮  Jugar	🎮  Play
+Calabazas	Pumpkins
+Halloween: calabazas con la cara encendida que parpadea	Halloween: pumpkins with flickering lit faces
+Telaraña	Cobweb
+Halloween: una tela en la esquina y su araña	Halloween: a web in the corner and its spider
+Océano	Ocean
+Olas con espuma que van y vienen	Foamy waves that come and go
+Galaxia	Galaxy
+Nebulosa violeta con estrellas que titilan	Violet nebula with twinkling stars
+Bosque	Forest
+Pinos al atardecer	Pines at sunset
+Cabeza de calabaza	Pumpkin head
+Halloween: tallada y con luz dentro	Halloween: carved, with a light inside
+Sombrero de bruja	Witch hat
+Halloween: punta doblada y cinta de color	Halloween: bent tip and a coloured band
+Casco vikingo	Viking helmet
+Hierro, bronce y cuernos	Iron, bronze and horns
+Corona de flores	Flower crown
+Ramas verdes con flores de colores	Green vines with colourful flowers
+Auriculares	Headphones
+Para no oír a los creepers; elige el color	So you can't hear the creepers; pick the colour
+Alas de mariposa	Butterfly wings
+Aletean despacio; elige el color	They flutter slowly; pick the colour
+Espada	Sword
+Hoja de acero y empuñadura dorada, a la espalda	Steel blade and golden hilt, on your back
+Escoba de bruja	Witch broom
+Halloween: para volar a casa	Halloween: to fly home
+Guitarra	Guitar
+Colgada a la espalda; elige el color	Slung on your back; pick the colour
+Zombi	Zombie
+Halloween: brazos al frente y paso arrastrado	Halloween: arms forward and a dragging step
+Reverencia	Bow
+Una inclinación, mano al pecho	A bow, hand on your chest
+Presumir	Show off
+Brazos arriba, enseñando músculo	Arms up, showing some muscle
+Ni idea	No idea
+Encogerse de hombros	A shrug
+Fantasmita	Little ghost
+Halloween: translúcido, flota y se mece	Halloween: see-through, floats and sways
+Calabacita	Little pumpkin
+Halloween: una calabaza pequeña que va dando saltos	Halloween: a small pumpkin that hops along
+Dragoncito	Little dragon
+Bate las alas y mueve la cola	Flaps its wings and wags its tail
+Abeja	Bee
+Zumba a tu lado	Buzzes by your side
+nuevo	new

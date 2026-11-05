@@ -1,0 +1,81 @@
+[package]
+name = "brasa"
+version = "1.0.0-beta.1"
+edition = "2021"
+rust-version = "1.91"
+description = "A fast, native Minecraft: Java Edition launcher with isolated instances and built-in mod support"
+license = "MIT"
+repository = "https://github.com/Piratemajo/brasa"
+homepage = "https://github.com/Piratemajo/brasa-releases"
+readme = "README.md"
+keywords = ["minecraft", "launcher", "modrinth", "fabric", "egui"]
+categories = ["games", "command-line-utilities"]
+publish = false
+exclude = ["/.github", "/scripts", "/mods"]
+
+[[bin]]
+name = "brasa"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream", "multipart"] }
+futures = "0.3"
+sha1 = "0.10"
+hex = "0.4"
+md5 = "0.7"
+sha2 = "0.10"
+rpassword = "7"
+uuid = { version = "1", features = ["v4"] }
+zip = { version = "2.2", default-features = false, features = ["deflate"] }
+flate2 = "1"
+tar = "0.4"
+clap = { version = "4", features = ["derive"] }
+directories = "5"
+open = "5"
+urlencoding = "2"
+eframe = "0.29"
+egui_extras = { version = "0.29", features = ["all_loaders"] }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp", "gif"] }
+rfd = "0.15"
+sys-locale = "0.3"
+base64 = "0.22"
+# Túnel de playit.gg para los servidores (el agente oficial, BSD-2). Fijado a un commit: sus crates
+# en crates.io van muy por detrás de la versión que acepta su servicio.
+# Brasa P2P: conexión directa entre equipos (QUIC cifrado, hole punching) con relé de reserva.
+# Sin «portmapper»: Brasa no pide al router que abra puertos (ni por UPnP).
+iroh = { version = "1.4", default-features = false, features = ["tls-ring"] }
+playit-agent-core = { git = "https://github.com/playit-cloud/playit-agent", rev = "1c5f1f5c16d23994fff870a5b26e7422cc5d4e9b" }
+playit-api-client = { git = "https://github.com/playit-cloud/playit-agent", rev = "1c5f1f5c16d23994fff870a5b26e7422cc5d4e9b" }
+
+# Icono del .exe en Windows (el del explorador de archivos y el acceso directo).
+[target.'cfg(windows)'.build-dependencies]
+winresource = "0.1"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = ["Win32_Foundation", "Win32_System_Console", "Win32_System_SystemInformation"] }
+keyring = { version = "3.6", features = ["windows-native"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+keyring = { version = "3.6", features = ["apple-native"] }
+
+[lints.rust]
+unsafe_code = "deny"
+
+[lints.clippy]
+dbg_macro = "deny"
+todo = "deny"
+unimplemented = "deny"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true
+
+
+

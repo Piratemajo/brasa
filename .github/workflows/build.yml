@@ -1,0 +1,180 @@
+name: build
+
+on:
+  push:
+    branches: [main, master]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+# Un push nuevo cancela el CI anterior de la misma rama: no se pagan compilaciones que ya no sirven.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      # Windows y sobre todo macOS gastan muchos más minutos (macOS ~10 veces Linux): en cada push o PR
+      # sólo Linux (pruebas y clippy). Las tres plataformas al publicar una versión (etiqueta v*) o al
+      # lanzarlo a mano desde Actions → build → Run workflow.
+      matrix:
+        include: ${{ fromJSON((startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch') && '[{"os":"ubuntu-latest","bin":"brasa","artifact":"brasa-linux-x64"},{"os":"windows-latest","bin":"brasa.exe","artifact":"brasa-windows-x64.exe"},{"os":"macos-latest","bin":"brasa","artifact":"brasa-macos-arm64"}]' || '[{"os":"ubuntu-latest","bin":"brasa","artifact":"brasa-linux-x64"}]') }}
+    runs-on: ${{ matrix.os }}
+    env:
+      # Datos de distribución: quedan incrustados en el binario y el usuario no los ve (src/distro.rs).
+      # Se definen en el repo: Settings → Secrets and variables → Actions.
+      # Si falta alguno, esa función se oculta en la interfaz; el resto funciona igual.
+      # El repositorio de actualizaciones sale solo de GITHUB_REPOSITORY.
+      # Client ID de Azure aprobado por Mojang. No es secreto (va dentro del ejecutable), pero vale
+      # tanto en Variables como en Secrets.
+      BRASA_MSA_CLIENT_ID: ${{ vars.BRASA_MSA_CLIENT_ID || secrets.BRASA_MSA_CLIENT_ID }}
+      # Application ID de Discord. Tampoco es secreto (va en el ejecutable); vale en Variables o en Secrets.
+      BRASA_DISCORD_CLIENT_ID: ${{ vars.BRASA_DISCORD_CLIENT_ID || secrets.BRASA_DISCORD_CLIENT_ID }}
+      BRASA_CURSEFORGE_KEY: ${{ secrets.BRASA_CURSEFORGE_KEY }}     # secreto: API key de console.curseforge.com
+      # Repo PÚBLICO donde se publican las releases (si el del código es privado). Vacío = este mismo repo.
+      BRASA_UPDATE_REPO: ${{ vars.BRASA_RELEASES_REPO }}
+    steps:
+      # Si una variable no secreta tiene algo que parece un token, se para: acabaría dentro del binario.
+      - name: Comprobar variables de distribución
+        shell: bash
+        run: |
+          repo="${BRASA_UPDATE_REPO}"
+          if [ -n "$repo" ] && ! [[ "$repo" =~ ^[A-Za-z0-9._-]+/[A-Za-z0-9._-]+$ ]]; then
+            echo "::error::BRASA_RELEASES_REPO tiene que ser usuario/repo (p. ej. Piratemajo/brasa-releases). Si pegaste un token ahí, revócalo YA y guárdalo como secreto BRASA_RELEASES_TOKEN."
+            exit 1
+          fi
+          for v in "$BRASA_MSA_CLIENT_ID" "$BRASA_DISCORD_CLIENT_ID"; do
+            if [[ "$v" == github_pat_* || "$v" == ghp_* ]]; then
+              echo "::error::Hay un token de GitHub en una variable de distribución. Revócalo y muévelo a Secrets."
+              exit 1
+            fi
+          done
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+      - name: Dependencias Linux (egui)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxkbcommon-dev libgl1-mesa-dev libwayland-dev
+      - name: Formato
+        if: runner.os == 'Linux'
+        run: cargo fmt --check
+      - name: Clippy
+        if: runner.os == 'Linux'
+        run: cargo clippy --locked --all-targets -- -D warnings
+      - name: Documentación
+        if: runner.os == 'Linux'
+        env:
+          RUSTDOCFLAGS: -D warnings
+        run: cargo doc --locked --no-deps --document-private-items
+      - name: Tests
+        run: cargo test --locked
+      - name: Build release
+        run: cargo build --release --locked
+      - name: Avisos de terceros al día
+        if: runner.os == 'Linux'
+        run: |
+          python3 scripts/third_party.py > /tmp/notices.md
+          diff -q /tmp/notices.md THIRD_PARTY_NOTICES.md || echo "::warning::THIRD_PARTY_NOTICES.md está desactualizado: python3 scripts/third_party.py > THIRD_PARTY_NOTICES.md"
+      - name: Versión
+        id: ver
+        shell: bash
+        run: echo "v=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)" >> "$GITHUB_OUTPUT"
+      # Firma opcional en Windows (si no hay certificado, SmartScreen avisará la primera vez).
+      # Secretos: WINDOWS_CERTIFICATE (.pfx en base64) y WINDOWS_CERTIFICATE_PASSWORD.
+      - name: Firmar brasa.exe
+        if: runner.os == 'Windows'
+        shell: pwsh
+        env:
+          CERT: ${{ secrets.WINDOWS_CERTIFICATE }}
+          CERT_PASS: ${{ secrets.WINDOWS_CERTIFICATE_PASSWORD }}
+        run: |
+          if (-not $env:CERT) { Write-Host "Sin certificado: brasa.exe va sin firmar"; exit 0 }
+          [IO.File]::WriteAllBytes("$env:RUNNER_TEMP\cert.pfx", [Convert]::FromBase64String($env:CERT))
+          $signtool = Get-ChildItem "${env:ProgramFiles(x86)}\Windows Kits\10\bin\*\x64\signtool.exe" | Sort-Object FullName -Descending | Select-Object -First 1
+          & $signtool.FullName sign /f "$env:RUNNER_TEMP\cert.pfx" /p $env:CERT_PASS /fd SHA256 /tr http://timestamp.digicert.com /td SHA256 target\release\brasa.exe
+      - name: Renombrar binario y calcular SHA-256
+        shell: bash
+        run: |
+          cp target/release/${{ matrix.bin }} ${{ matrix.artifact }}
+          # El auto-actualizador exige este fichero y verifica la descarga contra él.
+          if command -v sha256sum >/dev/null 2>&1; then
+            sha256sum ${{ matrix.artifact }} > ${{ matrix.artifact }}.sha256
+          else
+            shasum -a 256 ${{ matrix.artifact }} > ${{ matrix.artifact }}.sha256
+          fi
+          cat ${{ matrix.artifact }}.sha256
+      # El instalador es el mismo brasa.exe con otro nombre: al llamarse «…Setup…» abre el asistente
+      # de instalación (src/setup). Ya va firmado si hay certificado.
+      - name: Instalador de Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: Copy-Item target\release\brasa.exe Brasa-Setup-windows-x64.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          path: |
+            ${{ matrix.artifact }}
+            ${{ matrix.artifact }}.sha256
+            Brasa-Setup-windows-x64.exe
+      - name: Publicar release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          # con BRASA_RELEASES_REPO, la release va al repo público y hace falta un token con permiso allí
+          repository: ${{ vars.BRASA_RELEASES_REPO || github.repository }}
+          token: ${{ secrets.BRASA_RELEASES_TOKEN || github.token }}
+          tag_name: ${{ github.ref_name }}
+          # v1.0.0-beta.1 → beta (los que usan una final no la reciben)
+          prerelease: ${{ contains(github.ref_name, '-') }}
+          files: |
+            ${{ matrix.artifact }}
+            ${{ matrix.artifact }}.sha256
+            Brasa-Setup-windows-x64.exe
+
+  # Mods de cosméticos: uno por familia de versiones de Minecraft (src/cosmetics/support.rs).
+  # El launcher los descarga de la release y los instala solo en las instancias compatibles.
+  cosmetics-mod:
+    strategy:
+      fail-fast: false
+      matrix:
+        family: [fabric-1.21.1]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.10"
+      - name: Compilar el mod
+        working-directory: mods/cosmetics/${{ matrix.family }}
+        run: gradle build --no-daemon
+      - name: Nombre y SHA-256
+        shell: bash
+        run: |
+          jar=$(ls mods/cosmetics/${{ matrix.family }}/build/libs/*.jar | grep -v -- '-sources' | head -1)
+          cp "$jar" brasa-cosmetics-${{ matrix.family }}.jar
+          sha256sum brasa-cosmetics-${{ matrix.family }}.jar > brasa-cosmetics-${{ matrix.family }}.jar.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: brasa-cosmetics-${{ matrix.family }}
+          path: brasa-cosmetics-${{ matrix.family }}.jar*
+      - name: Publicar en la release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          # con BRASA_RELEASES_REPO, la release va al repo público y hace falta un token con permiso allí
+          repository: ${{ vars.BRASA_RELEASES_REPO || github.repository }}
+          token: ${{ secrets.BRASA_RELEASES_TOKEN || github.token }}
+          tag_name: ${{ github.ref_name }}
+          # v1.0.0-beta.1 → beta (los que usan una final no la reciben)
+          prerelease: ${{ contains(github.ref_name, '-') }}
+          files: |
+            brasa-cosmetics-${{ matrix.family }}.jar
+            brasa-cosmetics-${{ matrix.family }}.jar.sha256

@@ -1,0 +1,47 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Report a problem** in Brasa (console, crash card or Settings → About) uploads a redacted log and gives you a link to paste below.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Create a Fabric 1.21.1 instance
+        2. Add Sodium
+        3. Press Play
+  - type: input
+    id: report
+    attributes:
+      label: Report link
+      description: The mclo.gs link from "Report a problem", if you have one.
+  - type: input
+    id: version
+    attributes:
+      label: Brasa version
+      description: Shown under the logo, or with `brasa --version`.
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux]
+    validations:
+      required: true
+  - type: input
+    id: instance
+    attributes:
+      label: Minecraft version and loader
+      placeholder: 1.21.1 · Fabric 0.16.9

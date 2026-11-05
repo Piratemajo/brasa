@@ -1,0 +1,13 @@
+/target
+*.brasa-part
+
+# Cosmetics mod (Gradle)
+/mods/**/build/
+/mods/**/.gradle/
+
+# Tooling
+__pycache__/
+.idea/
+.vscode/
+*.swp
+.DS_Store
